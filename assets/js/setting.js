@@ -135,6 +135,34 @@ jQuery(document).ready(function () {
 		},
 	});
 
+	const team_slider = new Swiper(".team-slider", {
+		speed: 1000,
+		spaceBetween: 30,
+		slidesPerView: 4,
+		loop: true,
+		simulateTouch: true,
+		autoplay: {
+			delay: 1500,
+			disableOnInteraction: false,
+		},
+
+		breakpoints: {
+			992: {
+				slidesPerView: 4,
+			},
+			769: {
+				slidesPerView: 3,
+			},
+			426: {
+				slidesPerView: 2,
+			},
+			320: {
+				slidesPerView: 1,
+				spaceBetween: 20,
+			}
+		},
+	});
+
 
 	//Check if an element was in a screen
 

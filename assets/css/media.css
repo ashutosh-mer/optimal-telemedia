@@ -149,6 +149,60 @@
 	.footer-wrap .footer-bottom {
 		padding-top: 80px;
 	}
+
+	.growth-with-optl-wrap .img-box {
+		margin-top: 60px;
+	}
+
+	.why-choose-v2 .content {
+		flex-direction: column;
+		height: auto;
+	}
+
+	.why-choose-v2 .content .title {
+		margin-bottom: 30px;
+	}
+
+	.why-choose-v2 .card-listing .card {
+		position: relative;
+		inset: 0 !important;
+		transform: none !important;
+		width: calc(50% - 8px);
+		max-width: none;
+		min-height: 0;
+		transition-delay: 0s;
+	}
+
+	.why-choose-v2 .card-listing {
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		row-gap: 30px;
+		column-gap: 15px;
+	}
+
+	.leads-form-wrap .title-box {
+		margin-bottom: 50px;
+	}
+
+	.leads-form .row {
+		row-gap: 30px;
+	}
+
+	.service-banner-wrap .container {
+		height: 600px;
+	}
+
+	.service-banner-wrap .container .content {
+		padding-bottom: 60px;
+	}
+	.latest-blog-wrap .blog-listing {
+		row-gap: 30px;
+	}
+
+	.service-value-wrap .value-listing {
+		row-gap: 60px;
+	}
 }
 
 @media (max-width: 767px) {
@@ -192,6 +246,20 @@
 		height: 16px;
 	}
 
+	.growth-with-optl-wrap .img-box {
+		margin-top: 40px;
+	}
+
+	.why-choose-v2 .card-listing {
+		flex-direction: column;
+		row-gap: 15px;
+	}
+
+	.why-choose-v2 .card-listing .card {
+		width: 100%;
+		padding: 20px 15px;
+	}
+
 	.partners-slider .swiper-slide {
 		width: 120px;
 	}
@@ -202,7 +270,7 @@
 
 	.clients-slider-wrap,
 	.testimonial-wrap {
-		padding: 80px 0;
+		padding: 60px 0;
 	}
 
 	.testimonial-wrap .heading-box {
@@ -238,6 +306,32 @@
 	.subscriber-form .form-group {
 		flex-direction: column;
 		row-gap: 20px;
+	}
+
+	.leads-form-wrap .title-box {
+		margin-bottom: 30px;
+	}
+
+	.leads-form .row {
+		row-gap: 20px;
+	}
+
+	.service-banner-wrap .container {
+		height: 500px;
+	}
+
+	.service-banner-wrap .container .content {
+		padding-bottom: 30px;
+	}
+
+	.service-value-wrap .value-listing {
+		row-gap: 30px;
+		margin-top: 20px;
+	}
+
+	.service-value-wrap .value-listing .box .value-name {
+		margin-bottom: 14px;
+		margin-top: 14px;
 	}
 
 	.footer-wrap .title-box .title,

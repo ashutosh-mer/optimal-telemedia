@@ -491,6 +491,7 @@
 
 /* cta-sec-ends */
 
+/* blog-listing-starts */
 .blog-listing .card {
 	border: 0;
 	overflow: hidden;
@@ -553,6 +554,212 @@
 .blog-listing .card .info .blog-title a:is(:hover, :focus, :active) {
 	color: var(--primary);
 }
+
+/* blog-listing-ends */
+
+/* growth-with-optl-starts */
+
+.growth-with-optl-wrap .img-box {
+	margin-top: 100px;
+}
+
+/* growth-with-optl-ends */
+
+/* why-choose-v2-starts */
+
+.why-choose-v2 .content {
+	position: relative;
+	height: 700px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.why-choose-v2 .card-listing .card {
+	border-radius: 10px;
+	max-width: 235px;
+	padding: 40px 20px;
+	border: 0;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%);
+	min-height: 240px;
+	transition: all 1s ease-in-out;
+	transition-delay: 0.3s;
+}
+
+.why-choose-v2.aos-animate .card-1 {
+	top: 5%;
+	left: 10%;
+}
+
+.why-choose-v2.aos-animate .card-2 {
+	top: 5%;
+}
+
+.why-choose-v2.aos-animate .card-3 {
+	top: 5%;
+	left: 80%;
+}
+
+.why-choose-v2.aos-animate .card-4 {
+	top: 50%;
+	left: 10%;
+}
+
+.why-choose-v2.aos-animate .card-5 {
+	top: 50%;
+	left: 80%;
+}
+
+.why-choose-v2 .card-listing .card.card-1 {
+	background-color: var(--whitev2);
+}
+
+.why-choose-v2 .card-listing .card.card-2 {
+	background-color: var(--ternary);
+}
+
+.why-choose-v2 .card-listing .card.card-3 {
+	background-color: #e87c46;
+}
+
+.why-choose-v2 .card-listing .card.card-3 .num,
+.why-choose-v2 .card-listing .card.card-3 .desc,
+.why-choose-v2 .card-listing .card.card-4 .num,
+.why-choose-v2 .card-listing .card.card-4 .desc,
+.why-choose-v2 .card-listing .card.card-5 .num,
+.why-choose-v2 .card-listing .card.card-5 .desc {
+	color: var(--white);
+}
+
+.why-choose-v2 .card-listing .card.card-4 {
+	background-color: var(--teal);
+}
+
+.why-choose-v2 .card-listing .card.card-5 {
+	background-color: var(--primary);
+}
+
+.why-choose-v2 .card-listing .card .num {
+	color: var(--secondary);
+	margin-bottom: 10px;
+}
+.why-choose-v2 .card-listing .card .desc {
+	color: var(--blackv2);
+}
+
+/* why-choose-v2-ends */
+
+/* team-sec-starts */
+.team-wrap .sec-title {
+	margin-bottom: 60px;
+}
+
+.team-slider .team-box .img {
+	border-radius: 10px;
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+
+.team-slider .team-box .img img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.team-slider .team-box .name {
+	font-weight: 700;
+	color: var(--blackv2);
+	margin-bottom: 10px;
+}
+
+.team-slider .team-box .designation {
+	color: var(--secondary);
+}
+
+/* team-sec-ends */
+
+/* leads-form-starts */
+.leads-form-wrap .title-box {
+	margin-bottom: 70px;
+}
+
+.leads-form .row {
+	row-gap: 40px;
+}
+
+/* leads-form-ends */
+
+/* service-banner-starts */
+.service-banner-wrap {
+	position: relative;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.service-banner-wrap::after {
+	content: '';
+	width: 100%;
+	height: 100%;
+	background: rgb(0, 0, 0);
+	background: -moz-linear-gradient(
+		180deg,
+		rgba(0, 0, 0, 0) 0%,
+		rgba(0, 0, 0, 1) 100%
+	);
+	background: -webkit-linear-gradient(
+		180deg,
+		rgba(0, 0, 0, 0) 0%,
+		rgba(0, 0, 0, 1) 100%
+	);
+	background: linear-gradient(
+		180deg,
+		rgba(0, 0, 0, 0) 0%,
+		rgba(0, 0, 0, 1) 100%
+	);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.service-banner-wrap .container {
+	height: 800px;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+
+.service-banner-wrap .container .content {
+	position: relative;
+	z-index: 2;
+	text-align: center;
+	padding-bottom: 100px;
+}
+
+.service-banner-wrap .container .content .title {
+	color: var(--white);
+}
+
+/* service-banner-ends */
+
+/* service-value-starts */
+.service-value-wrap .value-listing {
+	row-gap: 80px;
+	margin-top: 30px;
+}
+
+.service-value-wrap .value-listing .box .value-name {
+	margin-bottom: 20px;
+	margin-top: 20px;
+	color: var(--secondary);
+	text-transform: capitalize;
+}
+
+/* service-value-ends */
 
 /* footer-sec-starts */
 .footer-wrap {

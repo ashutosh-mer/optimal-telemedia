@@ -466,8 +466,16 @@ p {
 	color: var(--primary);
 }
 
+.text-ternary {
+	color: var(--ternary);
+}
+
 .p-100 {
 	padding: 100px 0;
+}
+
+.p-40 {
+	padding: 40px 0;
 }
 
 .sec-title {
@@ -509,7 +517,7 @@ p {
 }
 
 .header-wrap.sticky header {
-	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+	box-shadow: 0px 4px 10px rgba(41, 88, 255, 0.25);
 }
 
 .header-wrap .content {
@@ -839,7 +847,6 @@ p {
 .form-control:active,
 .form-select:focus,
 .form-select:active {
-	border-color: #1697d2 !important;
 	box-shadow: none;
 }
 
@@ -848,22 +855,19 @@ p {
 	border: 0;
 }
 
-.form-group .form-label {
-	font-weight: 600;
-	font-size: 15px;
-	line-height: 1.87;
-	margin-bottom: 6px;
-	color: #506884;
+.form-group .form-control {
+	padding: 20px 0;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 1.1;
+	color: var(--teal);
+	border: 0;
+	border-bottom: 1px solid var(--teal);
+	border-radius: 0;
 }
 
-.form-group .form-control {
-	padding: 9px 22px;
-	font-weight: 400;
-	font-size: 14px;
-	line-height: 2;
-	color: #000;
-	border: 1px solid #bed3ea;
-	border-radius: 5px;
+.form-group .form-control:is(:active, :focus) {
+	border-bottom-color: var(--primary) !important;
 }
 
 .form-group .form-select {
@@ -880,13 +884,9 @@ p {
 	color: #000;
 }
 
-.form-group input.form-control {
-	height: 46px;
-}
-
 .form-group .form-control:placeholder-shown,
 .form-group .form-control::placeholder {
-	color: #93a6bb;
+	color: var(--teal);
 }
 
 .form-group .form-select option:checked {
@@ -1214,6 +1214,12 @@ ol li:not(:last-child) {
 		width: 50px;
 		height: 50px;
 	}
+
+	.form-group .form-control {
+		padding: 14px 0;
+		font-weight: 500;
+		font-size: 18px;
+	}
 }
 
 @media (max-width: 767px) {
@@ -1361,5 +1367,9 @@ ol li:not(:last-child) {
 	.scroll-to-top-btn {
 		width: 40px;
 		height: 40px;
+	}
+
+	.form-group .form-control {
+		font-size: 16px;
 	}
 }
