@@ -16,11 +16,24 @@ jQuery(document).ready(function () {
 		jQuery(".dropdown").removeClass("open");
 	});
 
-	// jQuery(".links li a").on("click", function () {
-	//   jQuery(".header-wrap .links").removeClass("open");
-	//   jQuery("body").removeClass("pause");
-	//   jQuery(".menu").removeClass("open");
-	// });
+	var headerheight = headerwrap.height();
+	console.log(headerheight);
+	jQuery("a[href*=\\#]:not([href=\\#])").on("click", function () {
+		var target = jQuery(this.hash);
+		target = target.length
+			? target
+			: jQuery("[name=" + this.hash.substr(1) + "]");
+		if (target.length) {
+			jQuery("html,body").animate(
+				{
+					scrollTop: target.offset().top - (headerheight + 20),
+				},
+				1500
+			);
+			return false;
+		}
+	});
+
 
 	var headerheight = headerwrap.height();
 	// Scroll Offset
@@ -165,7 +178,6 @@ jQuery(document).ready(function () {
 
 
 	//Check if an element was in a screen
-
 });
 
 var scrollToTopBtn = document.querySelector(".scroll-to-top");

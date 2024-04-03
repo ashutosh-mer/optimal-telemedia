@@ -1,5 +1,5 @@
 <!-- footer-starts -->
-<footer class="footer-wrap" data-aos="fade-up" data-aos-delay="400" data-aos-easing="ease-in-out">
+<footer class="footer-wrap">
     <div class="container">
         <div class="content">
             <div class="title-box d-flex flex-wrap">

@@ -203,6 +203,30 @@
 	.service-value-wrap .value-listing {
 		row-gap: 60px;
 	}
+
+	.blog-listing {
+		row-gap: 40px;
+	}
+
+	.category-wrap .category-listing {
+		column-gap: 14px;
+	}
+
+	.category-wrap {
+		flex-wrap: wrap;
+		align-items: flex-start;
+		justify-content: flex-start;
+		row-gap: 14px;
+	}
+
+	.category-wrap .category-listing a {
+		padding: 8px 16px;
+	}
+
+	.category-wrap .category-listing {
+		flex-wrap: wrap;
+		row-gap: 14px;
+	}
 }
 
 @media (max-width: 767px) {
@@ -332,6 +356,32 @@
 	.service-value-wrap .value-listing .box .value-name {
 		margin-bottom: 14px;
 		margin-top: 14px;
+	}
+
+	.category-wrap .category-listing {
+		column-gap: 10px;
+	}
+
+	.category-wrap {
+		row-gap: 10px;
+	}
+
+	.category-wrap .category-listing a {
+		padding: 6px 14px;
+		font-size: 14px;
+	}
+
+	.category-wrap .category-listing {
+		row-gap: 10px;
+	}
+
+	.blog-details-banner-wrap .bl-more-info ul {
+		row-gap: 14px;
+	}
+
+	.blog-details-content-wrap .share-this .social-listing li a {
+		width: 35px;
+		height: 35px;
 	}
 
 	.footer-wrap .title-box .title,
