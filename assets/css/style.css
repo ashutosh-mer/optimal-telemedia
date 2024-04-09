@@ -693,6 +693,11 @@
 	margin-bottom: 16px;
 }
 
+.toc-wrap {
+	position: sticky;
+	top: 180px;
+}
+
 .toc-wrap .toc-links {
 	display: flex;
 	flex-wrap: wrap;

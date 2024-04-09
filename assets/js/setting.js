@@ -17,7 +17,6 @@ jQuery(document).ready(function () {
 	});
 
 	var headerheight = headerwrap.height();
-	console.log(headerheight);
 	jQuery("a[href*=\\#]:not([href=\\#])").on("click", function () {
 		var target = jQuery(this.hash);
 		target = target.length
@@ -218,49 +217,5 @@ function raf(time) {
 
 requestAnimationFrame(raf);
 
-jQuery(document).ready(function ($) {
-	//Check if an element was in a screen
-	function isScrolledIntoView(elem) {
-		var docViewTop = jQuery(window).scrollTop();
-		var docViewBottom = docViewTop + jQuery(window).height();
-		var elemTop = jQuery(elem).offset().top;
-		var elemBottom = elemTop + jQuery(elem).height();
-		return ((elemBottom <= docViewBottom));
-	}
-	//Count up code
-	function countUp() {
-		jQuery('.counter').each(function () {
-			var ct = jQuery(this), // <- Don't touch this variable. It's pure magic.
-				countTo = ct.attr('data-count');
-			ended = ct.attr('ended');
 
-			if (ended != "true" && isScrolledIntoView(ct)) {
-				jQuery({ countNum: ct.text() }).animate({
-					countNum: countTo
-				},
-					{
-						duration: 10000, //duration of counting
-						easing: 'swing',
-						step: function () {
-							ct.text(Math.floor(this.countNum));
-						},
-						complete: function () {
-							ct.text(this.countNum);
-						}
-					});
-				ct.attr('ended', 'true');
-			}
-		});
-	}
-	//Start animation on page-load
-	if (isScrolledIntoView(".counter")) {
-		countUp();
-	}
-	//Start animation on screen
-	jQuery(document).scroll(function () {
-		if (isScrolledIntoView(".counter")) {
-			countUp();
-		}
-	});
-});
 
